@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Existing primary and accent colors */
+  --color-complementary: #4bb4ff; /* rgb(75, 180, 255) */
+  --color-analogous-1: #ff4bc9; /* rgb(255, 75, 201) */
+  --color-analogous-2: #ffa14b; /* rgb(255, 161, 75) */
+
+  /* Light theme */
+  --color-light: #ffffff; /* rgb(255, 255, 255) - Light background */
+  --color-light-text: #333333; /* rgb(51, 51, 51) - Dark text for light background */
+
+  /* Dark theme */
+  --color-dark: #121212; /* rgb(18, 18, 18) - Dark background */
+  --color-dark-text: #e0e0e0; /* rgb(224, 224, 224) - Light text for dark background */
+
+  /* Lighter and Darker shades of primary */
+  --color-primary: #0d2e84; /* rgb(13, 46, 132) */
+  --color-primary-light-1: #3a5299; /* rgb(58, 82, 153) */
+  --color-primary-light-2: #667bb3; /* rgb(102, 123, 179) */
+  --color-primary-light-3: #93a3cc; /* rgb(147, 163, 204) */
+  --color-primary-light-4: #c0cce6; /* rgb(192, 204, 230) */
+  --color-primary-light-5: #dee8ff;
+  --color-primary-dark-1: #0b276f; /* rgb(11, 39, 111) */
+  --color-primary-dark-2: #091f5a; /* rgb(9, 31, 90) */
+  --color-primary-dark-3: #071745; /* rgb(7, 23, 69) */
+  --color-primary-dark-4: #050f30; /* rgb(5, 15, 48) */
+
+  --color-bg-neutral: #f7f7f7;
+  --color-bg-white: #fbfbfb;
+  --color-gray: #707070;
+  --color-medium-gray: #d0d0d0;
+  --color-medium-gray-1: #bcbcbc;
+
+  --color-success: #28a745;
+  --color-success-dark: #218838;
+  --color-primary-blue: #007bff;
+  --color-primary-blue-dark: #0056b3;
+
+  --padding-xs: 0px 20px;
+  --padding-sm: 0px 30px;
+  --padding-md: 0px 40px;
+  --padding-lg: 0px 50px;
+  --padding-xl: 0px 60px;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-light);
+  font-size: clamp(10px, 2vw, 24px);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+/* Custom scrollbar for Webkit browser like Chrome, Safari */
+*::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+  border-radius: 10px; /* Roundness of the track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar handle color */
+  border-radius: 10px; /* Roundness of the handle */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar handle color on hover */
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Removes bullets/numbers */
+}
+
+li {
+  /* You can add additional styles here if needed */
+  margin: 0;
+  padding: 0;
+}

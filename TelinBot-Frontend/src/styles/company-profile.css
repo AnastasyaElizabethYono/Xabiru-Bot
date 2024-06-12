@@ -1,0 +1,89 @@
+.company .nav {
+  background-color: var(--color-primary-dark-1);
+  min-height: 78px;
+}
+
+.company .nav-brand {
+  color: var(--color-light);
+  font-size: 16px;
+}
+
+.company .navbar-toggler-icon {
+  color: var(--color-light);
+  font-size: 16px;
+}
+
+.company .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-light);
+  border-radius: 12px;
+  transition: border-radius 1s ease;
+  text-align: center;
+}
+
+.company .nav-link:hover {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.company .login-link {
+  font-size: 16px;
+  color: var(--color-primary);
+  background-color: var(--color-light);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.company .container-primary {
+  background-color: var(--color-light);
+  color: var(--color-primary-dark-1);
+}
+
+@media (max-width: 991px) {
+  .company .navbar-nav {
+    margin-top: 10px;
+  }
+  .company .nav-link {
+    margin-bottom: 3px;
+  }
+  .company .login-link {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-light);
+    background-color: var(--color-primary-dark-1);
+    border-radius: 12px;
+    transition: border-radius 1s ease;
+  }
+  .company .login-link:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border-radius: 30px;
+    font-weight: 400;
+  }
+  .nav-auth-container {
+    margin-top: 10px;
+    border-top: 2px solid var(--color-light);
+  }
+}
+
+@media (min-width: 992px) {
+  .company .nav-link {
+    margin: 0 5px;
+  }
+
+  .company .login-link {
+    font-weight: 600;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .company .login-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 8px 2px #fff;
+  }
+}

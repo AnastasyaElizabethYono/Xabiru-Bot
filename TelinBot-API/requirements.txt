@@ -1,0 +1,17 @@
+django
+djangorestframework
+django-cors-headers
+django-phonenumber-field
+djangorestframework-simplejwt
+python-dotenv
+phonenumbers
+Pillow
+Faker
+pandas
+openai
+langchain
+langchain-openai
+langchain-experimental
+tabulate
+azure-identity
+wikipedia

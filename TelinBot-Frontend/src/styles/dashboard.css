@@ -1,0 +1,114 @@
+.dashboard-wrapper {
+  display: flex;
+}
+
+.dashboard-wrapper main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  background-color: var(--color-bg-white);
+  border-bottom: 1px solid var(--color-medium-gray);
+  padding: 0 1.5rem;
+  z-index: 1;
+}
+
+.dashboard-content {
+  background-color: var(--color-bg-neutral);
+  flex-grow: 1;
+  margin-left: 175px;
+}
+
+.finance-report-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 20px;
+  min-height: 70px;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: background-color 0.3s ease;
+}
+
+.card-summary-container {
+  background-color: var(--color-primary-light-4);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.card-summary-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-summary-value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-summary-unit {
+  font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-content {
+    margin: 0;
+    padding: 1rem 3rem;
+  }
+
+  .sidebar-container {
+    display: flex;
+    align-items: start;
+    padding-left: 175px;
+    z-index: 2;
+    transition: padding-left 0.3s ease;
+  }
+  .sidebar {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    transition: left 0.3s ease;
+  }
+  .sidebar-container.collapsed {
+    padding-left: 0px;
+  }
+  .sidebar.collapsed {
+    left: -175px;
+  }
+  #sidebar-toggle-icon {
+    display: flex;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .dashboard-content {
+    padding: 1rem 6rem;
+  }
+}
+
+@media (min-width: 1101px) {
+  #sidebar-toggle-icon {
+    display: none;
+  }
+  .dashboard-content {
+    padding: 1rem 8rem;
+  }
+}
